@@ -1,0 +1,10 @@
+animal = "   chachito Feliz  "
+print(animal.strip().capitalize())
+print(animal.upper())
+print(animal.lower())
+print(animal.replace("chachito", "f"))
+print(animal.find("c"))
+print(animal.find("z"))
+print(animal.count("c"))
+print("ach" in animal)
+print("ach" not in animal)
