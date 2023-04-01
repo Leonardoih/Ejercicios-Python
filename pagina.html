@@ -1,0 +1,49 @@
+<html>
+	<meta charset="utf 8" />
+	<title>Piedra, Papel O Tijera</title>
+	<head>
+		<script>
+			function aleatorio(min, max) {
+				return Math.floor(Math.random() * (max - min + 1) + min);
+			}
+
+			function elegir(jugada) {
+				let resultado = '';
+				if (jugada == 1) {
+					resultado = 'piedra 🪨';
+				} else if (jugada == 2) {
+					resultado = 'Papel 📄';
+				} else if (jugada == 3) {
+					resultado = 'Tijera ✂️';
+				} else {
+					resultado = 'Elegiste Mal';
+				}
+				return resultado;
+			}
+			let jugador = 0;
+			let maquina = aleatorio(1, 3);
+
+			jugador = prompt(
+				'Elige 1 para Piedra, 2 para Papel o 3 para Tijera'
+			);
+
+			alert('El PC elige ' + elegir(maquina));
+			alert('tu Eliges ' + elegir(jugador));
+
+			if (jugador == maquina) {
+				alert('Empate');
+			} else if (jugador == 1 && maquina == 3) {
+				alert('Ganaste');
+			} else if (jugador == 2 && maquina == 1) {
+				alert('Ganaste');
+			} else if (jugador == 3 && maquina == 2) {
+				alert('Ganaste');
+			} else {
+				alert('Perdiste');
+			}
+		</script>
+	</head>
+	<body>
+		<h1>programa de Piedra papel o Tijerá</h1>
+	</body>
+</html>

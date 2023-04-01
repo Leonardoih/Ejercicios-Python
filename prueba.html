@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo de innerHTML</title>
+    <style>
+      /* Estilos CSS para el botón */
+      button {
+        padding: 10px;
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    a
+    <h1>Ejemplo de innerHTML</h1>
+    <button onclick="cambiarContenido()">Haz clic aquí</button>
+    <p id="mensaje">Este es un mensaje de ejemplo</p>
+
+    <script>
+      function cambiarContenido() {
+        // Obtener el elemento con ID "mensaje"
+       let mensaje = document.getElementById("mensaje");
+
+        // Cambiar el contenido HTML del elemento
+        mensaje.innerHTML = "Este es un nuevo mensaje.";
+      }
+    </script>
+  </body>
+</html>
